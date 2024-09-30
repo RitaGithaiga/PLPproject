@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>new_record</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home </a></li> 
+            <li><a href="trends.html">See your blood glucose trends </a></li> 
+            <li><a href="login.html">Logout </a></li> 
+
+
+            </ul>
+        </nav>
+        <Header>
+            <h1> Add a new recording!</h1>
+        </Header>
+        <br>
+        <form id="new-record">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time">
+            <br>
+            <label for="recording">Recording</label>
+            <input type="number" id="recording" name="recording" step="0.1">
+            <br>
+            <label for="units">Choose an option:</label>
+            <select id="units" name="units">
+                <option value="mmol/l">mmol/l</option>
+                <option value="mg/dl">mg/dl</option>
+            </select>
+            <br>
+            <button id="submit-button" type="submit"> save new record</button>
+        </form>
+        <script src='new_record.js'></script>
+    </body>
+</html>
